@@ -1,0 +1,25 @@
+#error-display {
+    color: red;
+}
+
+body {
+    background-image: url(https://previews.123rf.com/images/phanthit/phanthit1610/phanthit161000521/64309282-cork-board-texture-or-cork-board-background-or-empty-bulletin-cork-board-for-design-with-copy-space-.jpg);
+}
+
+#bulletin-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: 350px;
+    gap: 20px;
+}
+
+li {
+    background-color: lightpink;
+    padding: 10px;
+}
+
+li img {
+    width: 100%;
+    height: 125px;
+    object-fit: cover;
+}
