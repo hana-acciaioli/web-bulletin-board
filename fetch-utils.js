@@ -40,3 +40,7 @@ export async function getCategories() {
         return null;
     }
 }
+
+export async function getBulletins() {
+    return await client.from('bulletin_board').select('*').order('created_at').limit(50);
+}
